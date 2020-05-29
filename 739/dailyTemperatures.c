@@ -49,17 +49,6 @@ bool isEmpty(stack stk){
     return (stk->next == NULL) ? true : false;
 }
 
-void showElement(stack s){
-    
-    stackNode *tmp;
-    
-    tmp = s->next;
-    printf("round:\n");
-    for(;tmp != NULL; tmp = tmp->next)
-        printf("%d\n", tmp->val);
-    
-}
-
 
 int* dailyTemperatures(int* T, int TSize, int* returnSize){
     
